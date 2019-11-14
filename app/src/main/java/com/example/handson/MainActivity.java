@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         try{
             ContactsDb db = new ContactsDb(this);
             db.open();
-            db.updateEntry("1", "Johan Ju", "27845673455");
+            db.updateEntry("5", "Johan Ju", "27845673455");
             db.close();
             Toast.makeText(MainActivity.this, "Successfully updated!", Toast.LENGTH_SHORT).show();
         } catch (Exception e){
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         try{
             ContactsDb db = new ContactsDb(this);
             db.open();
-            db.deleteEntry("1");
+            db.deleteEntry("6");
             db.close();
             Toast.makeText(MainActivity.this, "Successfully updated!", Toast.LENGTH_SHORT).show();
         } catch (Exception e){
